@@ -23,3 +23,7 @@ vim.api.nvim_set_keymap('n', '<C-j>', ':m+1<CR>', { noremap = true, silent = tru
 
 vim.api.nvim_set_keymap('v', '<C-k>', ':m-2<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<C-j>', ':m+1<CR>', { noremap = true, silent = true })
+
+-- Mapeia 'jj' para 'Esc' no modo de inserção
+vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true, silent = true })
+

@@ -1,7 +1,17 @@
 vim.cmd [[packadd packer.nvim]]
 --vim.cmd[[colorscheme horizon]]
-vim.cmd[[colorscheme no-clown-fiesta]]
+--vim.cmd[[colorscheme no-clown-fiesta]]
 --vim.cmd[[colorscheme github]]
+
+require("rose-pine").setup({
+    styles = {
+        bold = false,
+        italic = false,
+        transparency = false,
+    },
+})
+
+vim.cmd("colorscheme rose-pine")
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
@@ -55,4 +65,6 @@ return require('packer').startup(function(use)
     use "lunarvim/horizon.nvim"
 
     use "1612492/github.vim"
+
+    use "rose-pine/neovim"
 end)
