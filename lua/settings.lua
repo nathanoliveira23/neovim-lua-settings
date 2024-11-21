@@ -19,3 +19,5 @@ set.splitright = true
 set.splitbelow = true
 
 set.scrolloff = 8
+
+set.clipboard:append("unnamedplus")
